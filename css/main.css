@@ -1,40 +1,46 @@
-html{
-  html {
-    box-sizing: border-box;
-    font-family: Karma, serif;
-    line-height: 1.5;
-    margin: 0;
-  }
+html {
+  box-sizing: border-box;
+  font-family: Karma, serif;
+  line-height: 1.5;
+  margin: 0;
+}
 
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-  ul {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin: 0;
-    display: grid;
-    padding: 1rem;
-    grid-gap: 1rem;
-  }
+ul {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+}
 
-  li {
-border: 3px solid #987ffa;
-border-radius: 6px;
-list-style: none;
-  }
+li {
+  border: 3px solid #987ffa;
+  border-radius: 6px;
+  list-style: none;
+}
 
-  h2 {
-    color: #6f00e7;
-    font-size: 2rem;
-    font-family: Oswald, sans-serif;
-    margin: 0;
-    text-align: center;
-    font-weight: 900;
-  }
+ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  p {
+h2 {
+  color: #6f00e7;
+  font-size: 2rem;
+  font-family: Oswald, sans-serif;
+  margin: 0;
+  text-align: center;
+  font-weight: 900;
+}
+
+p {
   font-family: Karma, serif;
   font-size: 1.4rem;
   margin: 0;
@@ -43,21 +49,21 @@ list-style: none;
   padding-right: 1rem;
   padding-top: .1em;
   padding-bottom: .5em;
-  }
+}
 
-  .cart-button {
-font-family: Oswald, sans-serif;
-background-color: #6f00e7;
-color: white;
-border-radius: 3em;
-display: inline-block;
-text-decoration: none;
-padding-top: .3em;
-padding-bottom: .6em;
-padding-left: 1.5em;
-padding-right: 1.5em;
-margin: 1rem;
-  }
+.cart-button {
+  font-family: Oswald, sans-serif;
+  background-color: #6f00e7;
+  color: white;
+  border-radius: 3em;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: .3em;
+  padding-bottom: .6em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin: 1rem;
+}
 
 .products {
   max-width: 100%;
@@ -65,7 +71,6 @@ margin: 1rem;
   padding-left: 4.05rem;
   padding-right: 4.05rem;
   padding-bottom: 1rem;
-
 }
 
 .share {
